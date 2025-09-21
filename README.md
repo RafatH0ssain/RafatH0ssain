@@ -1,5 +1,10 @@
 # 💫 About Me:
-I'm currently working on machine learning, AI integration, and full-stack development.<br>I'm looking to collaborate on projects that involve React, Node.js, AWS, Python, and AI/ML techniques.<br>I'm looking for help with landing an internship – I'm a co-op student at Dalhousie University.<br>I'm currently learning AWS, ML techniques, and diving into ethical hacking.<br>Ask me about full-stack development and modern frameworks<br>fun fact: coffee and code are my ultimate combo - but ill never say no to a good challenge
+I’m currently exploring the worlds of machine learning, AI integration, and full-stack development.<br>  
+I love working with React, Node.js, AWS, and Python—and I’m always excited to dive into projects that bring AI/ML techniques into the mix.<br>  
+Right now, I’m on the lookout for an internship opportunity as a co-op student at Dalhousie University, while continuing to build my skills in AWS, machine learning, and even ethical hacking.<br>  
+Ask me anything about full-stack development or modern frameworks—I’m always up for a good tech chat!<br>  
+Fun fact: coffee + code is my ultimate combo (but honestly, I’ll never say no to a good challenge).  
+
 
 
 ## 🌐 Socials:
