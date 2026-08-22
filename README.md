@@ -1,38 +1,80 @@
-# Hi there, I'm Rafat! 👋
+<div align="center">
 
-### 👨‍💻 About Me
+<img src="./contact-sheet.svg" width="660" alt="A frame of 35mm film: Rafat Hossain raising a camera to his eye, drawn in ASCII characters"/>
 
-I’m a 4th-year Computer Science student at Dalhousie University, operating at the intersection of full-stack development and artificial intelligence. Whether it's building scalable web applications or fine-tuning Large Language Models, I love tackling complex technical challenges. 
+[photosbyrh.vercel.app](https://photosbyrh.vercel.app) &nbsp;·&nbsp;
+[linkedin](https://www.linkedin.com/in/rafat--hossain/) &nbsp;·&nbsp;
+[email](mailto:rafat.click.hossain@gmail.com)
 
----
+</div>
 
-### 🌐 Let's Connect
+<img src="./hd-about.svg" width="660" alt="about"/>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rafat--hossain/) 
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rafat.hossain@dal.ca) 
-[![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/dirter.rh) 
-[![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=Facebook&logoColor=white)](https://www.facebook.com/rafat.hossain.564)
+> Fourth-year CS at Dalhousie, in Halifax.<br>
+> Machine learning and full-stack, with a bias toward systems that have to<br>
+> hold up against something real.
 
----
+Ten subjects' EEG, a camera on a copy stand, a browser at 60 fps — the work I<br>
+care about is the kind that fails visibly when it is wrong. Right now that's<br>
+SPECTRA-ICA, an EEG artifact-removal method that won its category at NeuroHack<br>
+2026.
 
-### 🛠️ Tech Stack
+<img src="./hd-stack.svg" width="660" alt="stack"/>
 
-**Languages**  
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![R](https://img.shields.io/badge/r-%23276DC3.svg?style=for-the-badge&logo=r&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) 
+<samp>languages&nbsp;&nbsp;&nbsp;python&nbsp;&nbsp;typescript&nbsp;&nbsp;javascript&nbsp;&nbsp;java&nbsp;&nbsp;c++&nbsp;&nbsp;c&nbsp;&nbsp;r&nbsp;&nbsp;sql</samp><br>
+<samp>ml&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pytorch&nbsp;&nbsp;numpy&nbsp;&nbsp;pandas&nbsp;&nbsp;scikit-learn&nbsp;&nbsp;mne&nbsp;&nbsp;ollama</samp><br>
+<samp>web&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;react&nbsp;&nbsp;next.js&nbsp;&nbsp;node&nbsp;&nbsp;express&nbsp;&nbsp;flask&nbsp;&nbsp;tailwind&nbsp;&nbsp;webgl2</samp><br>
+<samp>data&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;postgres&nbsp;&nbsp;mysql&nbsp;&nbsp;mongodb</samp><br>
+<samp>infra&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;docker&nbsp;&nbsp;aws&nbsp;&nbsp;gcp&nbsp;&nbsp;firebase&nbsp;&nbsp;vercel&nbsp;&nbsp;git</samp>
 
-**Web & Cloud**  
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) ![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7) 
+<img src="./hd-projects.svg" width="660" alt="projects"/>
 
-**Data & Databases**  
-![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
+<samp>01</samp> &nbsp; **[SPECTRA-ICA](https://github.com/RafatH0ssain/SPECTRAICA-Surge-NeuroHack-2026)** &nbsp;·&nbsp; <samp>python, mne</samp><br>
+EEG artifact removal that gates ICA cleaning by time and frequency instead of<br>
+discarding whole components. It beat standard ICA on all seven metrics across<br>
+ten subjects. 1st place in the machine learning category, SURGE NeuroHack 2026.
 
-**Libraries & Architecture**  
-![React Query](https://img.shields.io/badge/-React%20Query-FF4154?style=for-the-badge&logo=react%20query&logoColor=white) ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white) ![React Hook Form](https://img.shields.io/badge/React%20Hook%20Form-%23EC5990.svg?style=for-the-badge&logo=reacthookform&logoColor=white) ![Knockout.js](https://img.shields.io/badge/Knockout.js-E42B28?style=for-the-badge&logo=knockout.js&logoColor=white) ![DaisyUI](https://img.shields.io/badge/daisyui-5A0EF8?style=for-the-badge&logo=daisyui&logoColor=white) ![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)
+<samp>02</samp> &nbsp; **Canon film scanners** &nbsp;·&nbsp; <samp>python, edsdk / ccapi</samp><br>
+Negatives on a copy stand: live positive preview, remote focus and shutter, no<br>
+rig shake from pressing the button. USB runs 59.8 fps to Wi-Fi's 4.0, so there<br>
+are two builds, one per transport: [over USB](https://github.com/RafatH0ssain/Canon-EDSDK-Film-Scanner) and<br>
+[over Wi-Fi](https://github.com/RafatH0ssain/Canon-Smart-Film-Scanner).
 
-**Tools & Design**  
-![GitLab](https://img.shields.io/badge/gitlab-%23181717.svg?style=for-the-badge&logo=gitlab&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Windows Terminal](https://img.shields.io/badge/Windows%20Terminal-%234D4D4D.svg?style=for-the-badge&logo=windows-terminal&logoColor=white) ![Adobe Lightroom Classic](https://img.shields.io/badge/Lightroom%20Classic-31A8FF.svg?style=for-the-badge&logo=Adobe%20Lightroom%20Classic&logoColor=white) ![Adobe Photoshop](https://img.shields.io/badge/Photoshop-%2331A8FF.svg?style=for-the-badge&logo=adobe%20photoshop&logoColor=white) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) 
+<samp>03</samp> &nbsp; **[Dosed Lens](https://github.com/RafatH0ssain/Dosed-Lens)** &nbsp;·&nbsp; <samp>typescript, webgl2</samp><br>
+Twelve substances as GLSL shaders, each driven by the image's own edges and<br>
+luminance rather than a filter laid over the top. Runs entirely in the browser;<br>
+nothing is uploaded. Exports a PNG frame or a WebM.
 
----
+<samp>04</samp> &nbsp; **[CamusGPT](https://github.com/RafatH0ssain/camus-gpt)** &nbsp;·&nbsp; <samp>python, ollama</samp><br>
+A fine-tuned Albert Camus persona with a retrieval layer. Personality lives in<br>
+the weights and facts live in retrieval, so a wrong fact is a retrieval bug and<br>
+not a retraining job.
 
-### ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)
+<samp>05</samp> &nbsp; **[PhotosByRH](https://github.com/RafatH0ssain/PhotosByRH)** &nbsp;·&nbsp; <samp>next.js, tailwind</samp><br>
+A live photography portfolio on Next.js 16 and React 19. Page and grid motion is<br>
+plain CSS so it runs on the compositor; Framer Motion is scoped to the lightbox,<br>
+where it earns its weight.
+
+<img src="./hd-about-this-page.svg" width="660" alt="about this page"/>
+
+Nothing on this page loads from another server. The strip at the top is my own<br>
+photograph, pushed through a thirteen-step character ramp by<br>
+[`scripts/make_contact_sheet.py`](scripts/make_contact_sheet.py), and the section<br>
+rules by [`scripts/make_headings.py`](scripts/make_headings.py). Both are run by<br>
+hand and their output is committed, so there is no scheduled job here, and<br>
+nothing on the page can rate-limit or go dark.
+
+They animate with SMIL because GitHub strips `<script>` from READMEs, and they<br>
+are images rather than styled text because it strips CSS too — drawing the<br>
+heading is the only way to put this page's own typeface on it. The animation<br>
+only ever subtracts: every element rests visible, so a renderer that ignores<br>
+SMIL shows the finished picture instead of an empty frame.
+
+That typeface is [JetBrains Mono](scripts/fonts), subset to the exact glyphs<br>
+each file draws and inlined as base64. Not only for looks: the frame's grid<br>
+assumes an advance width of exactly 0.600 em, and a viewer whose default<br>
+monospace is narrower would see the strip shear.
+
+The frame is drawn twice. Ink is ink, so one rendering would come out as a<br>
+negative on a dark background; the second is mapped down an inverted ramp on<br>
+its own tone curve, and the two themes swap which one is shown.
