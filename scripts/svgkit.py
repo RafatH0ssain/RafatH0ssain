@@ -88,6 +88,29 @@ def theme_css(extra=""):
     )
 
 
+def reveal(begin, fade, total):
+    """SMIL that holds an element clear until `begin`, then fades it in.
+
+    The naive form of this is opacity="0" plus an animation up to 1, and it is
+    a trap: anything that ignores SMIL — a renderer without it, a sanitiser
+    that strips it, a thumbnailer — leaves the element at nought and the
+    reader gets a blank frame. The whole argument for generating these files
+    is that they cannot go dark, so the resting state has to be the finished
+    image.
+
+    So the element keeps opacity="1" and the stagger is encoded inside one
+    animation that starts at zero: it holds the element clear through its
+    share of the developing time, brings it up, and freezes. Nothing is
+    animated *to* the visible state from outside the timeline, so losing the
+    timeline costs the motion and nothing else.
+    """
+    k1 = max(0.0, min(begin / total, 1.0))
+    k2 = max(k1, min((begin + fade) / total, 1.0))
+    return ('<animate attributeName="opacity" values="0;0;1;1" '
+            'keyTimes="0;%.4f;%.4f;1" begin="0s" dur="%.2fs" '
+            'fill="freeze"/>' % (k1, k2, total))
+
+
 def svg_open(w, h, title):
     return (
         '<svg xmlns="http://www.w3.org/2000/svg" '
