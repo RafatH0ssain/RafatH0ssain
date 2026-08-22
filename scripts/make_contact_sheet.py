@@ -28,15 +28,21 @@ least once first:
   * Grain has to be taken out at the scale it lives at. A 35mm negative carries
     real grain, far finer than the character grid, and sampling straight down
     aliases it rather than averaging it — single grains land on single cells and
-    fire off a stray '@' in the middle of smooth skin.
+    fire off a stray full block in the middle of a smooth area.
 """
 import numpy as np
 from PIL import Image, ImageFilter
 
 import svgkit as kit
-from svgkit import RAMP
 
 SRC = "scripts/source/frame.png"
+
+# Four shades of block rather than a punctuation ramp. Block glyphs fill their
+# whole cell, so neighbours meet with no gap and the picture resolves into flat
+# masses instead of a field of separate marks — which is the whole point: this
+# is meant to read as a poster, not as a photograph. It is the most simplified
+# of the treatments and it gives up the most likeness for it.
+RAMP = " ░▒█"
 
 # With the background gone, resolution costs nothing. At 104 columns the face
 # had about twenty characters to describe itself with and came out blocky;
@@ -47,7 +53,7 @@ SRC = "scripts/source/frame.png"
 COLS = 156
 CURVE = 1.00        # the tone curve, applied across the subject only
 CLIP = (2, 98)      # percentiles, over the subject only, for black and white
-SMOOTH = 0.30       # pre-blur radius in destination cells; see sample()
+SMOOTH = 0.50       # pre-blur radius in destination cells; see sample()
 
 CHAR_W = 4.0                          # 156 * 4 = 624, plus margins = 660 exactly
 FONT = CHAR_W / kit.ADVANCE           # the advance is 0.600 em, so this is exact

@@ -33,11 +33,6 @@ FONTS = os.path.join(HERE, "fonts")
 LIGHT = dict(ink="#6e7681", emph="#424a53", dim="#8c959f", rule="#d0d7de")
 DARK = dict(ink="#7d8590", emph="#c9d1d9", dim="#6e7681", rule="#30363d")
 
-# Bright and sparse to dark and dense. Thirteen steps, because a photograph
-# needs a mid-range: four steps is enough for a calendar heat map and turns a
-# face into mud.
-RAMP = " .`:-=+*cs#%@"
-
 ADVANCE = 0.600          # em, and the grid depends on it being exactly this
 
 
