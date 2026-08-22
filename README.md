@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./contact-sheet.svg" width="660" alt="A frame of 35mm film: Rafat Hossain raising a camera to his eye, drawn in ASCII characters"/>
+<img src="./contact-sheet.svg" width="660" alt="Rafat Hossain raising a camera to his eye, cut out of the photograph and drawn in ASCII characters, on a frame of 35mm film"/>
 
 [photosbyrh](https://photosbyrh.vercel.app) &nbsp;·&nbsp;
 [linkedin](https://www.linkedin.com/in/rafat--hossain/) &nbsp;·&nbsp;
