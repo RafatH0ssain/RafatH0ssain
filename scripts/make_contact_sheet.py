@@ -30,7 +30,7 @@ wrong first:
 Needs pillow, numpy, fonttools and brotli at generation time only.
 """
 import numpy as np
-from PIL import Image
+from PIL import Image, ImageFilter
 
 import svgkit as kit
 from svgkit import RAMP
@@ -39,8 +39,12 @@ SRC = "scripts/source/frame.jpg"
 
 COLS = 104          # below ~90 the glasses go; far above and the glyphs blur
 CURVE = 0.70        # light theme: <1 lifts mid-tones; see the note above
-CURVE_DARK = 1.45   # dark theme: >1 compresses them; see build()
+CURVE_DARK = 1.90   # dark theme: >1 compresses them; see build()
 CLIP = (2, 98)      # percentiles used to set black and white points
+SMOOTH = 0.25       # pre-blur radius, in destination cells; see to_rows()
+                    # 0.55 was too much: blurring by roughly the width of a
+                    # cell and then averaging over that same cell flattens
+                    # the local contrast twice and the face goes to mush.
 
 FONT = 10.0
 CHAR_W = FONT * kit.ADVANCE          # exactly 6.0 — the grid depends on it
@@ -64,7 +68,22 @@ def to_rows(path):
     """Sample the photograph onto the character grid."""
     im = Image.open(path).convert("L")
     rows = int(round(im.height / im.width * COLS / CELL))
-    im = im.resize((COLS, rows), Image.LANCZOS)
+
+    # This is the difference between a photograph and a field of speckle. The
+    # negative is 35mm and carries real grain and dust, and both sit at a much
+    # higher frequency than the character grid can hold. Sampling straight down
+    # doesn't average them away, it aliases them: single grains land on single
+    # cells and fire off a '@' in the middle of a smooth wall. Blurring first,
+    # by a radius tied to how far we are about to reduce, takes the grain out
+    # at the scale it lives at.
+    #
+    # The resample filter matters for the same reason. Lanczos is the right
+    # choice when sharpness is what you want; here it rings around every edge
+    # and keeps exactly the high frequencies we are trying to lose. A box
+    # filter averages the source pixels each cell actually covers, which is
+    # what the ramp wants — one honest mean per character.
+    im = im.filter(ImageFilter.GaussianBlur(SMOOTH * im.width / COLS))
+    im = im.resize((COLS, rows), Image.BOX)
 
     a = np.asarray(im, dtype=np.float32) / 255.0
     lo, hi = np.percentile(a, CLIP[0]), np.percentile(a, CLIP[1])
