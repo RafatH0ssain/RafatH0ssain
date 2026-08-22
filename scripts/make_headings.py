@@ -27,7 +27,6 @@ RULE_Y = 10.5
 SECTIONS = [
     ("hd-about.svg", "about"),
     ("hd-stack.svg", "stack"),
-    ("hd-quote.svg", "quote"),
 ]
 
 SWEEP = 0.75         # seconds for the rule to run out

@@ -21,7 +21,3 @@
 <samp>web&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;react&nbsp;&nbsp;next.js&nbsp;&nbsp;node&nbsp;&nbsp;express&nbsp;&nbsp;flask&nbsp;&nbsp;tailwind&nbsp;&nbsp;webgl2</samp><br>
 <samp>data&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;postgres&nbsp;&nbsp;mysql&nbsp;&nbsp;mongodb</samp><br>
 <samp>infra&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;docker&nbsp;&nbsp;aws&nbsp;&nbsp;gcp&nbsp;&nbsp;firebase&nbsp;&nbsp;vercel&nbsp;&nbsp;git</samp>
-
-<img src="./hd-quote.svg" width="660" alt="quote"/>
-
-<img src="./quote.svg" width="660" alt="A rotating quote"/>
