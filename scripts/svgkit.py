@@ -47,7 +47,10 @@ def subset_font(chars, weight="Regular"):
     from fontTools.ttLib import TTFont
 
     path = os.path.join(FONTS, "JetBrainsMonoNL-%s.ttf" % weight)
-    font = TTFont(path)
+    # recalcTimestamp would stamp head.modified with the time of the run, so
+    # the same photograph and the same copy would emit different bytes every
+    # time and every regeneration would show a diff that means nothing.
+    font = TTFont(path, recalcTimestamp=False)
     opts = subset.Options()
     opts.flavor = "woff2"
     opts.desubroutinize = True
