@@ -51,7 +51,14 @@ RAMP = " ░▒█"
 # Now there is nothing behind him to sharpen, so the grid can be fine enough
 # to read as a halftone instead of as tiles.
 COLS = 156
-CURVE = 1.00        # the tone curve, applied across the subject only
+# Exposure, and there are two of them. The ink is one grey, so on paper a full
+# block is dark and on a dark canvas the same block is light — but the two do
+# not weigh the same to the eye. Light on a dark ground blooms outward past its
+# own edges, so a field of blocks that looks right in the light theme reads hot
+# and overexposed in the dark one. The dark rendering is therefore printed
+# lighter: same drawing, same polarity, fewer cells pushed to a full block.
+CURVE = 0.68        # light theme
+CURVE_DARK = 0.48   # dark theme, held back for the reason above
 CLIP = (2, 98)      # percentiles, over the subject only, for black and white
 SMOOTH = 0.50       # pre-blur radius in destination cells; see sample()
 
@@ -134,7 +141,9 @@ def perforations(w, y):
 
 
 def build(tone, cover):
-    idx = to_cells(tone, cover, CURVE)
+    light = to_cells(tone, cover, CURVE)
+    dark = to_cells(tone, cover, CURVE_DARK)
+    idx = light          # geometry and the develop order come from the lighter one
     nrows, ncols = idx.shape
     fw, fh = ncols * CHAR_W, nrows * LINE_H
     w = fw + 2 * MARGIN
@@ -160,6 +169,9 @@ def build(tone, cover):
         + ".gate{fill:none;stroke:var(--rule);stroke-width:1}"
         + ".px{font-family:'JBMono',monospace;font-size:%gpx;fill:var(--ink);"
           "white-space:pre}" % FONT
+        + ".dk{display:none}"
+        + "@media (prefers-color-scheme:dark){.lt{display:none}"
+          ".dk{display:inline}}"
         + ".edge{font-family:'JBMono',monospace;font-size:8px;font-weight:600;"
           "fill:var(--dim);letter-spacing:1.6px}"
     )
@@ -173,15 +185,16 @@ def build(tone, cover):
            '<rect class="gate" x="%.1f" y="%.1f" width="%.1f" height="%.1f"/>'
            % (fx + .5, fy + .5, fw - 1, fh - 1)]
 
-    for r in range(nrows):
-        line = "".join(RAMP[i] for i in idx[r]).rstrip()
-        if not line.strip():
-            continue
-        out.append(
-            '<text class="px" xml:space="preserve" x="%.1f" y="%.1f" opacity="1">'
-            '%s%s</text>'
-            % (fx, fy + LINE_H * (r + 0.8), kit.esc(line),
-               kit.reveal(begin[r], FADE, TOTAL)))
+    for cells, cls in ((light, "px lt"), (dark, "px dk")):
+        for r in range(nrows):
+            line = "".join(RAMP[i] for i in cells[r]).rstrip()
+            if not line.strip():
+                continue
+            out.append(
+                '<text class="%s" xml:space="preserve" x="%.1f" y="%.1f" '
+                'opacity="1">%s%s</text>'
+                % (cls, fx, fy + LINE_H * (r + 0.8), kit.esc(line),
+                   kit.reveal(begin[r], FADE, TOTAL)))
 
     ey = BAND + fh + REBATE * 0.62
     edge_at = DEVELOP + FADE * 0.35
