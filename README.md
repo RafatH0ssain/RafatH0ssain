@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./contact-sheet.svg" width="660" alt="Rafat Hossain raising a camera to his eye, cut out of the photograph and drawn in ASCII characters, on a frame of 35mm film"/>
+<img src="./scene.svg" width="660" alt="A frame of 35mm film holding a starfield: a ringed planet lit from the left, drifting stars, and a comet crossing the frame"/>
 
 [photosbyrh](https://photosbyrh.vercel.app) &nbsp;·&nbsp;
 [linkedin](https://www.linkedin.com/in/rafat--hossain/) &nbsp;·&nbsp;
