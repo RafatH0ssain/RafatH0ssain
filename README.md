@@ -4,7 +4,7 @@
 
 [website](https://rafathossain.com/) &nbsp;·&nbsp;
 [linkedin](https://www.linkedin.com/in/rafat--hossain/) &nbsp;·&nbsp;
-[email](mailto:rafat.click.hossain@gmail.com)
+[email](mailto:rafat.hossain@dal.ca)
 
 </div>
 
