@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./scene.svg" width="660" alt="A frame of 35mm film holding a starfield: a ringed planet turning on its axis, drifting stars, a comet, and passing spacecraft"/>
+<img src="./scene.svg" width="660" alt="A frame of 35mm film holding a starfield: a ringed planet lit from the left, drifting stars, and a comet crossing the frame"/>
 
 [11 project write-ups](https://rafathossain.com/) &nbsp;·&nbsp;
 [linkedin](https://www.linkedin.com/in/rafat--hossain/) &nbsp;·&nbsp;

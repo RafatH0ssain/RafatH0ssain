@@ -7,8 +7,8 @@ GitHub's README renderer takes three things away:
   * <script>, so motion has to be SMIL, declared inside the SVG;
   * CSS, so the only way to put a chosen typeface on the page is to draw the
     text inside an image that carries the font itself;
-  * links inside SVG, so anything that needs a clickable link has to live
-    outside the images.
+  * links inside SVG, which is why the project list stays markdown and only
+    the headings and the film strip are images.
 
 The font is subset to exactly the characters a given file draws and inlined
 as base64. That is not only for looks. The strip's grid assumes an advance
