@@ -22,7 +22,7 @@ rig shake from pressing the button. USB runs 59.8 fps to Wi-Fi's 4.0, so there<b
 are two builds, one per transport: [over USB](https://github.com/RafatH0ssain/Canon-EDSDK-Film-Scanner) and<br>
 [over Wi-Fi](https://github.com/RafatH0ssain/Canon-Smart-Film-Scanner).
 
-<samp>02</samp> &nbsp; **[SPECTRA-ICA](https://github.com/RafatH0ssain/spectra-ica-eeg)** &nbsp;·&nbsp; <samp>python, mne</samp><br>
+<samp>02</samp> &nbsp; **[SPECTRA-ICA](https://github.com/RafatH0ssain/SPECTRAICA-Surge-NeuroHack-2026)** &nbsp;·&nbsp; <samp>python, mne</samp><br>
 EEG artifact removal that gates ICA cleaning by time and frequency instead of<br>
 discarding whole components. It beat standard ICA on all seven metrics across<br>
 ten subjects. 1st place in the machine learning category, SURGE NeuroHack 2026.
