@@ -26,7 +26,9 @@ RULE_Y = 10.5
 
 SECTIONS = [
     ("hd-about.svg", "about"),
+    ("hd-projects.svg", "projects"),
     ("hd-stack.svg", "stack"),
+    ("hd-about-this-page.svg", "about this page"),
 ]
 
 SWEEP = 0.75         # seconds for the rule to run out
