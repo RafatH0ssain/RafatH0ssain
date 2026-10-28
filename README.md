@@ -10,10 +10,6 @@
 
 <img src="./hd-about.svg" width="660" alt="about"/>
 
-> Fourth-year CS at Dalhousie, in Halifax.<br>
-> Machine learning and full-stack, with a bias toward systems that have to<br>
-> hold up against something real.
-
 <img src="./hd-stack.svg" width="660" alt="stack"/>
 
 <samp>languages&nbsp;&nbsp;&nbsp;python&nbsp;&nbsp;typescript&nbsp;&nbsp;javascript&nbsp;&nbsp;java&nbsp;&nbsp;c++&nbsp;&nbsp;c&nbsp;&nbsp;r&nbsp;&nbsp;sql</samp><br>
