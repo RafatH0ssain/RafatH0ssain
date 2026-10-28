@@ -3,7 +3,6 @@
 <img src="./scene.svg" width="660" alt="A frame of 35mm film holding a starfield: a ringed planet lit from the left, drifting stars, and a comet crossing the frame"/>
 
 [website](https://rafathossain.com/) &nbsp;·&nbsp;
-[linkedin](https://www.linkedin.com/in/rafat--hossain/) &nbsp;·&nbsp;
 [email](mailto:rafat.hossain@dal.ca)
 
 </div>
