@@ -8,8 +8,6 @@
 
 </div>
 
-<img src="./hd-about.svg" width="660" alt="about"/>
-
 <img src="./hd-stack.svg" width="660" alt="stack"/>
 
 <samp>languages&nbsp;&nbsp;&nbsp;python&nbsp;&nbsp;typescript&nbsp;&nbsp;javascript&nbsp;&nbsp;java&nbsp;&nbsp;c++&nbsp;&nbsp;c&nbsp;&nbsp;r&nbsp;&nbsp;sql</samp><br>
